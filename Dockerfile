@@ -18,6 +18,12 @@ RUN tar -xaC /usr/local/bin -f jet-linux_amd64_1.19.3.tar.gz
 
 RUN chmod +x /usr/local/bin/jet
 
+RUN wget http://stedolan.github.io/jq/download/linux64/jq
+
+RUN chmod +x ./jq
+
+RUN cp jq /usr/bin
+
 RUN yum -y install git
 
 RUN yum -y install php56u php56u-mcrypt php56u-mbstring
