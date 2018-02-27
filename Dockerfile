@@ -39,3 +39,8 @@ RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.
     ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
 RUN echo -e "date.timezone=\"Asia/Singapore\"" > /etc/php.d/timezone.ini
+
+RUN yum -y install nodejs npm && yum clean all
+
+RUN npm install -g api-console-cli
+
