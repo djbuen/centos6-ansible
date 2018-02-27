@@ -40,6 +40,10 @@ RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.
 
 RUN echo -e "date.timezone=\"Asia/Singapore\"" > /etc/php.d/timezone.ini
 
+RUN yum -y install gcc-c++ make
+
 RUN curl -sL https://rpm.nodesource.com/setup_9.x | bash -
+
+RUN yum -y install nodejs
 
 RUN npm install -g api-console-cli
