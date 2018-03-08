@@ -47,3 +47,5 @@ RUN curl -sL https://rpm.nodesource.com/setup_9.x | bash -
 RUN yum -y install nodejs
 
 RUN npm install -g api-console-cli
+
+RUN npm install -g bower
