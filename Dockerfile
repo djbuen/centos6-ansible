@@ -26,7 +26,7 @@ RUN cp jq /usr/bin
 
 RUN yum -y install git
 
-RUN yum -y install php56u php56u-mcrypt php56u-mbstring
+RUN yum -y install php56u php56u-gd php56u-mcrypt php56u-mbstring php56u-mysql
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
 
