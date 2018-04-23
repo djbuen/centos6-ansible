@@ -42,7 +42,7 @@ RUN echo -e "date.timezone=\"Asia/Singapore\"" > /etc/php.d/timezone.ini
 
 RUN yum -y install gcc-c++ make
 
-RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_6.x | bash -
 
 RUN yum -y install nodejs
 
