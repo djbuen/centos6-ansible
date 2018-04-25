@@ -34,10 +34,6 @@ RUN pear install XML_Parser
 
 RUN yum -y install unzip
 
-RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" && \
-    unzip awscli-bundle.zip && \
-    ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
-
 RUN echo -e "date.timezone=\"Asia/Singapore\"" > /etc/php.d/timezone.ini
 
 RUN yum -y install gcc-c++ make
