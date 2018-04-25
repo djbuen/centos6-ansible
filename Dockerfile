@@ -44,11 +44,7 @@ RUN yum -y install gcc-c++ make
 
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
 
-RUN source ~/.bash_profile
-
-RUN bash
-
-RUN exit
+RUN source ~/.bash_profile && bash && exit
 
 RUN nvm install v6.10.3
 
