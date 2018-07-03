@@ -42,7 +42,6 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh
 
 RUN source ~/.bashrc && nvm install v6.10.3 && nvm alias default 6.10.3 
 
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-RUN yum install -y nodejs
+RUN yum -y install nodejs
 RUN npm install phantomjs -g
 
