@@ -45,5 +45,4 @@ RUN source ~/.bashrc && nvm install v6.10.3 && nvm alias default 6.10.3
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 RUN yum install -y nodejs
 RUN npm install phantomjs -g
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-RUN yum install -y nodejs
+
